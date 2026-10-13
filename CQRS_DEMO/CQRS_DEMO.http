@@ -1,0 +1,29 @@
+@CQRS_DEMO_HostAddress = http://localhost:5018
+
+POST {{CQRS_DEMO_HostAddress}}/api/Users
+Content-Type: application/json
+
+{
+  "UserID": "Nguyen Van A",
+  "mail": "a@gmail.com"
+}
+###
+
+GET {{CQRS_DEMO_HostAddress}}/api/Users/U001
+Accept: application/json
+###
+
+POST http://localhost:5018/api/Users
+Content-Type: application/json
+
+{
+    "userID": "",
+    "mail": "abc"
+}
+###
+POST http://localhost:5018/api/Users
+Content-Type: application/json
+
+{
+    "userID": "",
+    "mail": "abc"
